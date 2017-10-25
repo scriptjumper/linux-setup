@@ -12,9 +12,9 @@ SELENIUM_STANDALONE_VERSION=3.4.0
 SELENIUM_SUBDIR=$(echo "$SELENIUM_STANDALONE_VERSION" | cut -d"." -f-2)
 
 # Remove existing downloads and binaries so we can start from scratch.
-rm -r ~/google-chrome-stable_current_amd64.deb
-rm -r ~/selenium-server-standalone-*.jar
-rm -r ~/chromedriver_linux64.zip
+sudo rm -r ~/google-chrome-stable_current_amd64.deb
+sudo rm -r ~/selenium-server-standalone-*.jar
+sudo rm -r ~/chromedriver_linux64.zip
 sudo rm -r /usr/local/bin/chromedriver
 sudo rm -r /usr/local/bin/selenium-server-standalone.jar
 
@@ -31,7 +31,7 @@ sudo dpkg -i --force-depends ~/google-chrome-stable_current_amd64.deb
 # Install ChromeDriver.
 wget -N http://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip -P ~/
 unzip ~/chromedriver_linux64.zip -d ~/
-rm -r ~/chromedriver_linux64.zip
+sudo rm -r ~/chromedriver_linux64.zip
 sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
 sudo chown root:root /usr/local/bin/chromedriver
 sudo chmod 0755 /usr/local/bin/chromedriver
