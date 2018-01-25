@@ -1,3 +1,5 @@
+# Install .NET Core for Ubuntu 14.04, Ubuntu 16.04, Ubuntu 16.10 & Linux Mint 17, Linux Mint 18 (64 bit)
+
 # 1. Remove any previous preview versions of .NET Core from your system.
 # 2. Register the Microsoft Product key as trusted.
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
