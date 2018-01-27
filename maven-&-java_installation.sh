@@ -24,7 +24,7 @@ java -version
 # Step 3: Install Apache Maven
 # You can download the latest stable version of Apache Maven from its official website, otherwise you can download it directly with the following command:
 cd /opt/
-wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+sudo wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 # Once the download has completed, extract the downloaded archive.
 sudo tar -xvzf apache-maven-3.3.9-bin.tar.gz
 # Next, rename the extracted directory.
@@ -38,7 +38,7 @@ export M2_HOME=/opt/maven
 export PATH=${M2_HOME}/bin:${PATH}
 # Save and close the file, update its permissions, then load the environment variables with the following command:
 sudo chmod +x /etc/profile.d/mavenenv.sh
-sudo source /etc/profile.d/mavenenv.sh
+source /etc/profile.d/mavenenv.sh
 
 # Step 5: Verify installation
 # Once everything has been successfully configured, check the version of the Apache Maven.
