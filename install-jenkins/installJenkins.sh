@@ -5,7 +5,5 @@ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sour
 sudo apt-get update
 sudo apt-get install jenkins
 # Step 3 — Launching Jenkins
-# Only run this command if google- chrome is installed
-google-chrome http://localhost:8080/
+echo "\n go to http://localhost:8080/ in your browser of choice \n"
 # Step 4 — follow jenkins setup
-# Last there will be a screen with a path way to find a sercet code you must sudo cat <the location of the password shown> to get the key
