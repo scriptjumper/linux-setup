@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install vlc
+sudo apt install -y vlc
 
 sudo apt-get update
-sudo apt-get install vlc browser-plugin-vlc
+sudo apt-get install -y vlc browser-plugin-vlc
